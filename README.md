@@ -1,15 +1,15 @@
-# keye-claude-skills
+# keye-open-skills
 
-> **科爷的 Claude Code 技能集合** - 提升 AI 辅助开发效率的实用技能
+> **Useful Agent skills collection** - 提升 AI 辅助创作、开发和分析效率的实用技能
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude-Code-blue.svg)](https://claude.ai/code)
+[![Agent Skills](https://img.shields.io/badge/Agent-Skills-blue.svg)](https://github.com/keyelifeai/keye-open-skills)
 
 ---
 
 ## 📚 关于这个项目
 
-这是一个精选的 Claude Code 技能集合，基于实际使用经验整理，帮助你在 AI 辅助开发中提高效率。
+这是一个精选的 Agent 技能集合，基于实际使用经验整理，帮助你在 AI 辅助创作、开发、分析和自动化工作中提高效率。
 
 **核心理念**：
 - 🎯 **实战至上** - 经过实际项目验证
@@ -45,8 +45,8 @@
 ## 🚀 快速开始
 
 ### 环境要求
-- Claude Code（最新版本）
-- 基础的 Claude API 使用经验
+- 支持技能/提示词工作流的 AI Agent 工具
+- 基础的 AI 助手使用经验
 
 ### 安装技能
 
@@ -54,13 +54,13 @@
 1. 浏览技能目录
 2. 找到你需要的技能
 3. 复制技能内容
-4. 粘贴到 Claude Code 中使用
+4. 粘贴到你的 Agent 工具中使用
 
 #### 方法 2: 本地安装
 ```bash
 # 克隆仓库
-git clone https://github.com/keyelifeai/keye-claude-skills.git
-cd keye-claude-skills
+git clone https://github.com/keyelifeai/keye-open-skills.git
+cd keye-open-skills
 
 # 查看技能列表
 ls skills/
@@ -98,7 +98,7 @@ ls skills/
 
 **使用方法**：
 1. 复制技能内容
-2. 在 Claude Code 中粘贴
+2. 在你的 Agent 工具中粘贴
 3. 添加你的具体主题
 4. 执行生成
 
@@ -140,7 +140,7 @@ ls skills/
 
 **使用方法**：
 1. 复制技能内容
-2. 粘贴到 Claude Code
+2. 粘贴到你的 Agent 工具
 3. 添加你要审查的代码
 4. 获得审查结果
 
@@ -175,7 +175,7 @@ ls skills/
 **使用方法**：
 1. 准备你的数据（CSV、JSON等）
 2. 复制技能内容
-3. 粘贴到 Claude Code 并添加数据
+3. 粘贴到你的 Agent 工具并添加数据
 4. 获得分析结果
 
 ---
@@ -183,7 +183,7 @@ ls skills/
 ## 📂 目录结构
 
 ```
-keye-claude-skills/
+keye-open-skills/
 ├── README.md                    # 本文件
 ├── skills/                      # 技能目录
 │   ├── content-creation/        # 内容创作技能
@@ -245,7 +245,7 @@ keye-claude-skills/
 
 ## 🔧 配置说明
 
-### Claude Code 设置
+### Agent 工具设置
 ```json
 {
   "model": "claude-sonnet-4-6",
@@ -299,8 +299,7 @@ keye-claude-skills/
 ## 🔗 相关项目
 
 - **[keye-open-prompts]** - 中文提示词库
-- **[keye-article-pipeline]** - AI 文章创作流程
-- **[keye-markdown-tools]** - Markdown 处理工具
+- **[keye-markdown-mastery]** - Markdown 学习笔记与处理工具
 
 ---
 
@@ -308,7 +307,7 @@ keye-claude-skills/
 
 - 🐦 **X (Twitter)**: [@keyelifeai](https://x.com/keyelifeai)
 - 📧 **Email**: keyelifeai@gmail.com
-- 💼 **GitHub Issues**: [提交问题](https://github.com/keyelifeai/keye-claude-skills/issues)
+- 💼 **GitHub Issues**: [提交问题](https://github.com/keyelifeai/keye-open-skills/issues)
 
 ---
 
