@@ -24,6 +24,7 @@
 - **文章写作** - AI 驱动的文章创作流程
 - **内容优化** - 标题、正文优化
 - **格式转换** - Markdown、YAML 处理
+- **行业简报** - 畜牧、饲料、动物营养行业每日新闻简报
 
 ### 🔧 开发工具
 - **代码审查** - 自动代码审查和优化建议
@@ -186,6 +187,13 @@ ls skills/
 keye-open-skills/
 ├── README.md                    # 本文件
 ├── skills/                      # 技能目录
+│   ├── daily-industry-news-briefing/
+│   │   ├── SKILL.md
+│   │   └── references/
+│   │       ├── content-guidelines.md
+│   │       ├── search-strategy.md
+│   │       ├── sources.md
+│   │       └── template.md
 │   ├── content-creation/        # 内容创作技能
 │   │   ├── article-generation.md
 │   │   ├── content-optimization.md
