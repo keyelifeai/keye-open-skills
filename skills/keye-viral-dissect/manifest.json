@@ -32,7 +32,15 @@
   },
   "output_config": {
     "path_source": "memory",
-    "default_path": "/Users/kevinzheng/Library/Mobile Documents/iCloud~md~obsidian/Documents/SyncVault/Business_ContentCreator/01-灵感与素材库/爆款分析",
+    "default_path": "~/Documents/爆款分析",
     "path_memory_key": "viral_dissect_output_path"
+  },
+  "security": {
+    "url_validation": {
+      "allowed_protocols": ["https"],
+      "allowed_domains": ["x.com", "twitter.com", "mp.weixin.qq.com", "xiaohongshu.com", "zhihu.com"],
+      "block_private_ranges": true,
+      "timeout_seconds": 30
+    }
   }
 }

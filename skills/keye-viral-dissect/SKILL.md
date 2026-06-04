@@ -24,11 +24,21 @@ dependencies: [web-access]
 
 ## 核心流程
 
-1. **获取内容**：链接调用/web-access，粘贴内容直接处理，PDF解析后处理
+1. **获取内容**：
+   - 链接调用/web-access（仅限 HTTPS，白名单域名）
+   - 粘贴内容直接处理
+   - PDF解析后处理
 2. **识别类型**：教程指南类、案例故事类、观点论证类、叙事故事类
 3. **选择模板**：根据文章类型选用对应模板（见 templates/）
 4. **执行分析**：按照模板结构提取核心观点、副观点、说服策略、情绪触发点、金句等
 5. **生成输出**：添加YAML元数据，保存到配置路径
+
+## 安全规则
+
+- 仅处理 HTTPS URL
+- 仅允许白名单域名（x.com, twitter.com, mp.weixin.qq.com, xiaohongshu.com, zhihu.com）
+- 阻止私有 IP 范围和 localhost
+- 请求超时 30 秒
 
 ## 输出配置
 
