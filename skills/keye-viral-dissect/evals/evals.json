@@ -1,0 +1,102 @@
+{
+  "skill_name": "keye-viral-dissect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "分析这篇爆款文章：\n\n[假设文章内容：一篇关于AI时代个人成长的文章，讲述了传统技能正在贬值，新的编排者技能正在崛起，窗口期正在收窄，呼吁读者立即行动学习AI工具。文章用了数据对比（AI数学能力35分→99分）、个人经历（朋友案例）、时间压迫（窗口在收窄）等论证策略。]",
+      "expected_output": "生成的 Markdown 文件应包含：1) YAML 元数据（title, author, status, type, tags, created, source, platform, original_author）；2) 核心观点（一句话总结+三段式论证）；3) 副观点（3-7个，带支撑数据/案例）；4) 说服策略（权威背书、对比、时间压迫、亲证等）；5) 情绪触发点（警觉、震撼、焦虑、恐惧、行动等）；6) 金句表格（含原文、情绪价值、位置）；7) 可选部分（如情感曲线、论证方式、语言风格等，根据文章特点选择）",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "分析这篇爆款文章：https://x.com/example/status/1234567890",
+      "expected_output": "首先使用 web-access skill 获取 X (Twitter) 文章内容，识别文章类型（教程指南类/案例故事类/观点论证类/叙事故事类），选择对应模板，然后按照分析框架生成完整的 Markdown 文件，包含必需的五个部分（核心观点、副观点、说服策略、情绪触发点、金句）和适当的可选部分。文件应保存到记忆中配置的路径，文件名格式为 [YYYY-MM-DD]_[文章关键词]-爆款分析.md",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "分析这篇爆款：\n\n[假设文章内容：一篇关于移民经历的个人分享文章，讲述在日本住了8年后选择搬走的原因。文章开头澄清不是签证问题（拿了永住），承认日本优点，然后用6个具体观点说明为什么离开（读空气文化、不是移民国家、教育问题、钱不好用、宠物不友好、税务重）。文章用了个人经历、具体场景、对比论证、代入感制造等策略。]",
+      "expected_output": "生成的分析应准确识别：1) 文章类型为叙事故事类，选用对应模板；2) 核心观点（日本虽安全方便但难以融入）；3) 6个副观点（读空气、非移民国家、教育同质化、钱不好用、宠物限制、税务重）；4) 说服策略（澄清+承认、个人身份背书、具体案例、对比法、代入感）；5) 情绪触发点（挫败感、困惑感、焦虑感、疲惫感、认同感）；6) 金句提取（永住+日本太太、读空气、钱在日本有用但没那么好用等）；7) 可选分析（情感曲线、视角转化、语言风格特征等）",
+      "files": []
+    }
+  ],
+  "assertions": [
+    {
+      "eval_id": 1,
+      "name": "包含必需的 YAML 元数据",
+      "description": "输出文件必须包含完整的 YAML frontmatter，包含 title, author, status, type, tags, created 字段",
+      "check_type": "file_content",
+      "expected": "frontmatter"
+    },
+    {
+      "eval_id": 1,
+      "name": "包含核心观点部分",
+      "description": "必须有一句话核心论点和三段式论证",
+      "check_type": "file_content",
+      "expected": "## 核心观点"
+    },
+    {
+      "eval_id": 1,
+      "name": "包含副观点部分",
+      "description": "必须有3-7个副观点，每个有支撑数据/案例",
+      "check_type": "file_content",
+      "expected": "## 副观点"
+    },
+    {
+      "eval_id": 1,
+      "name": "包含说服策略部分",
+      "description": "必须分析文章的论证和说服方法",
+      "check_type": "file_content",
+      "expected": "## 说服策略"
+    },
+    {
+      "eval_id": 1,
+      "name": "包含情绪触发点部分",
+      "description": "必须分析文章触发了什么情绪",
+      "check_type": "file_content",
+      "expected": "## 情绪触发点"
+    },
+    {
+      "eval_id": 1,
+      "name": "包含金句表格",
+      "description": "必须提取金句并以表格形式展示，包含原文、情绪价值、位置三列",
+      "check_type": "file_content",
+      "expected": "## 金句"
+    },
+    {
+      "eval_id": 2,
+      "name": "尝试获取在线文章",
+      "description": "对于链接形式的文章，应尝试使用 web-access skill 获取内容",
+      "check_type": "behavior",
+      "expected": "attempt_web_access"
+    },
+    {
+      "eval_id": 2,
+      "name": "识别文章类型并选择模板",
+      "description": "应识别文章类型（教程指南类/案例故事类/观点论证类/叙事故事类）并选用对应模板",
+      "check_type": "behavior",
+      "expected": "select_template"
+    },
+    {
+      "eval_id": 2,
+      "name": "保存到配置路径",
+      "description": "文件应保存到记忆中配置的输出路径",
+      "check_type": "file_path",
+      "expected": "memory_configured_path"
+    },
+    {
+      "eval_id": 3,
+      "name": "识别叙事故事类文章",
+      "description": "对于个人经历分享类文章，应识别为叙事故事类并选用对应模板",
+      "check_type": "content_accuracy",
+      "expected": "narrative_template_selected"
+    },
+    {
+      "eval_id": 3,
+      "name": "提取金句准确性",
+      "description": "金句提取应精准，覆盖文章中的关键句子",
+      "check_type": "content_quality",
+      "expected": "accurate_quotes"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# 爆款文章拆解 Skill - Agent Interface
+
+interface:
+  display_name: 爆款文章拆解
+  short_description: 分析爆款文章并提取写作技巧和情绪设计
+  default_prompt: 分析这篇爆款文章，提取其核心观点、副观点、说服策略、情绪触发点和金句
+
+compatibility:
+  canonical_format: skill-md-v1
+  adapter_targets: [claude-code, generic-agent]
+  activation:
+    mode: auto
+  execution:
+    context: inline
+    shell: bash
+  trust:
+    source_tier: local
+    remote_inline_execution: forbid
+    remote_metadata_policy: local-only
+  degradation:
+    claude-code:
+      impact_level: none
+      notes: []
+    generic-agent:
+      impact_level: none
+      notes: []

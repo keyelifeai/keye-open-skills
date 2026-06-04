@@ -25,6 +25,7 @@
 - **内容优化** - 标题、正文优化
 - **格式转换** - Markdown、YAML 处理
 - **行业简报** - 畜牧、饲料、动物营养行业每日新闻简报
+- **爆款拆解** - 爆款文章分析与写作技巧提取
 
 ### 🔧 开发工具
 - **代码审查** - 自动代码审查和优化建议
@@ -102,6 +103,57 @@ ls skills/
 2. 在你的 Agent 工具中粘贴
 3. 添加你的具体主题
 4. 执行生成
+
+---
+
+### 🔥 爆款文章拆解技能
+
+**使用场景**：分析爆款文章，提取写作技巧和情绪设计
+
+**技能名称**：`keye-viral-dissect`
+
+**触发条件**：
+- "分析这篇爆款"
+- "拆解爆款"
+- "爆款分析"
+- "分析这篇文章"（文章为爆款内容时）
+
+**支持平台**：微信公众号、X (Twitter)、小红书、知乎等
+
+**核心功能**：
+- 自动识别文章类型（教程指南类、案例故事类、观点论证类、叙事故事类）
+- 提取核心观点、副观点、说服策略、情绪触发点、金句
+- 生成结构化的 Markdown 分析文件
+
+**使用方法**：
+1. 安装技能到 `~/.claude/skills/keye-viral-dissect/`
+2. 对着文章链接或内容说："分析这篇爆款"
+3. 技能自动选择对应模板，生成分析文件
+
+**输出示例**：
+```markdown
+---
+title: 爆款分析 - [文章标题]
+author: [分析者]
+status: 已分析
+type: 爆款分析
+tags:
+  - 爆款分析
+  - 教程指南
+created: 2026-06-04
+source: [文章链接]
+original_author: [原作者]
+platform: X (Twitter)
+---
+
+## 核心观点
+[一句话总结文章的核心论点]
+
+## 副观点
+| 序号 | 观点 | 支撑 |
+|------|------|------|
+...
+```
 
 ---
 
@@ -189,11 +241,29 @@ keye-open-skills/
 ├── skills/                      # 技能目录
 │   ├── daily-industry-news-briefing/
 │   │   ├── SKILL.md
+│   │   ├── manifest.json
+│   │   ├── agents/
+│   │   │   └── interface.yaml
 │   │   └── references/
 │   │       ├── content-guidelines.md
 │   │       ├── search-strategy.md
 │   │       ├── sources.md
 │   │       └── template.md
+│   ├── keye-viral-dissect/
+│   │   ├── SKILL.md
+│   │   ├── manifest.json
+│   │   ├── agents/
+│   │   │   └── interface.yaml
+│   │   ├── references/
+│   │   │   ├── analysis-framework.md
+│   │   │   └── output-guide.md
+│   │   ├── templates/
+│   │   │   ├── viral-tutorial.md
+│   │   │   ├── viral-case-study.md
+│   │   │   ├── viral-opinion.md
+│   │   │   └── viral-narrative.md
+│   │   └── evals/
+│   │       └── evals.json
 │   ├── content-creation/        # 内容创作技能
 │   │   ├── article-generation.md
 │   │   ├── content-optimization.md
@@ -332,6 +402,12 @@ keye-open-skills/
 ---
 
 ## 🔄 更新日志
+
+### v1.1.0 (2026-06-04)
+- ✨ 新增 `keye-viral-dissect` 技能 - 爆款文章分析与写作技巧提取
+- 🎯 支持 4 种文章类型模板：教程指南类、案例故事类、观点论证类、叙事故事类
+- 📝 更新 README.md，添加新技能说明和使用示例
+- 🔧 优化技能目录结构，统一 manifest.json 和 interface.yaml 格式
 
 ### v1.0.0 (2026-05-10)
 - ✅ 初始版本发布

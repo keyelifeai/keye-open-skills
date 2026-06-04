@@ -1,0 +1,38 @@
+{
+  "name": "keye-viral-dissect",
+  "version": "2.0.0",
+  "owner": "keye",
+  "updated_at": "2026-06-04",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "production",
+  "context_budget_tier": "production",
+  "review_cadence": "quarterly",
+  "target_platforms": ["claude", "generic"],
+  "interface": {
+    "display_name": "爆款文章拆解",
+    "short_description": "分析爆款文章并提取写作技巧和情绪设计",
+    "default_prompt": "分析这篇爆款文章，提取其核心观点、副观点、说服策略、情绪触发点和金句"
+  },
+  "compatibility": {
+    "canonical_format": "skill-md-v1",
+    "adapter_targets": ["claude-code", "generic-agent"],
+    "activation": {
+      "mode": "auto"
+    },
+    "execution": {
+      "context": "none",
+      "shell": "none"
+    },
+    "trust": {
+      "source_tier": "user",
+      "remote_inline_execution": false,
+      "remote_metadata_policy": "local-only"
+    }
+  },
+  "output_config": {
+    "path_source": "memory",
+    "default_path": "/Users/kevinzheng/Library/Mobile Documents/iCloud~md~obsidian/Documents/SyncVault/Business_ContentCreator/01-灵感与素材库/爆款分析",
+    "path_memory_key": "viral_dissect_output_path"
+  }
+}
