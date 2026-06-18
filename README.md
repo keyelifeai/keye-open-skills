@@ -24,7 +24,6 @@
 - **文章写作** - AI 驱动的文章创作流程
 - **内容优化** - 标题、正文优化
 - **格式转换** - Markdown、YAML 处理
-- **行业简报** - 畜牧、饲料、动物营养行业每日新闻简报
 - **爆款拆解** - 爆款文章分析与写作技巧提取
 
 ### 🔬 深度研究
@@ -284,16 +283,6 @@ Step 4: 同行评审 (可靠性评估)
 keye-open-skills/
 ├── README.md                    # 本文件
 ├── skills/                      # 技能目录
-│   ├── daily-industry-news-briefing/
-│   │   ├── SKILL.md
-│   │   ├── manifest.json
-│   │   ├── agents/
-│   │   │   └── interface.yaml
-│   │   └── references/
-│   │       ├── content-guidelines.md
-│   │       ├── search-strategy.md
-│   │       ├── sources.md
-│   │       └── template.md
 │   ├── keye-viral-dissect/
 │   │   ├── SKILL.md
 │   │   ├── manifest.json
@@ -428,6 +417,7 @@ keye-open-skills/
 
 ## 🔗 相关项目
 
+- **[keye-private-skill]** - 私有 Agent Skills 集合（含个人风格档案等敏感内容）
 - **[keye-open-prompts]** - 中文提示词库
 - **[keye-markdown-mastery]** - Markdown 学习笔记与处理工具
 
@@ -454,6 +444,10 @@ keye-open-skills/
 ---
 
 ## 🔄 更新日志
+
+### v1.3.0 (2026-06-18)
+- 📦 将 `daily-industry-news-briefing` 技能迁移至私有仓库 [keye-private-skill](https://github.com/keyelifeai/keye-private-skill)
+- 🔄 更新目录结构和技能分类
 
 ### v1.2.0 (2026-06-18)
 - ✨ 新增 `storm-deepresearch` 技能 - 基于 Stanford STORM Method 的多视角深度研究框架
