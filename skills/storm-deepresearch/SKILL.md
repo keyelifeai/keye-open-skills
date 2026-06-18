@@ -1,4 +1,5 @@
 ---
+name: storm-deepresearch
 description: 基于 Stanford STORM Method 的多视角深度研究框架，5 分钟完成博士级 40-60 小时研究。触发词：storm、深度研究、多视角分析、研究简报、storm-deepresearch。
 version: 1.1.0
 tags: [research, analysis, multi-perspective, stanford, storm, deep-research]
