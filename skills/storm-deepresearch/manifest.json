@@ -1,0 +1,14 @@
+{
+  "name": "storm-deepresearch",
+  "version": "1.1.0",
+  "description": "基于 Stanford STORM Method 的多视角深度研究框架（含证据搜索）",
+  "author": "kevinzheng",
+  "tags": ["research", "analysis", "multi-perspective", "stanford", "storm", "web-search"],
+  "category": "research",
+  "license": "MIT",
+  "homepage": "https://storm.genie.stanford.edu/",
+  "repository": "https://github.com/stanford-oval/storm",
+  "minClaudeVersion": "1.0.0",
+  "dependencies": [],
+  "entryPoint": "SKILL.md"
+}

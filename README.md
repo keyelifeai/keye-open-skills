@@ -27,6 +27,9 @@
 - **行业简报** - 畜牧、饲料、动物营养行业每日新闻简报
 - **爆款拆解** - 爆款文章分析与写作技巧提取
 
+### 🔬 深度研究
+- **STORM 多视角研究** - 基于 Stanford STORM Method 的 4 步深度研究框架，5 分钟完成博士级研究
+
 ### 🔧 开发工具
 - **代码审查** - 自动代码审查和优化建议
 - **文档生成** - API 文档、README 生成
@@ -233,6 +236,48 @@ platform: X (Twitter)
 
 ---
 
+### 🔬 STORM 多视角深度研究技能
+
+**使用场景**：5 分钟完成博士级 40-60 小时的多视角深度研究
+
+**技能名称**：`storm-deepresearch`
+
+**触发条件**：
+- "用 STORM 研究..."
+- "深度研究..."
+- "多视角分析..."
+- "storm-deepresearch"
+
+**核心方法论**：Stanford STORM Method（NAACL 2024）
+
+**核心功能**：
+- 模拟 5 种专家视角（实践者/学术/怀疑论者/经济学家/历史学家）
+- 自动生成矛盾地图（冲突/共识/盲区）
+- 可选证据搜索（WebSearch 验证最新数据）
+- 综合研究简报 + 同行评审（置信度打分）
+
+**工作流**：
+```
+Step 1: 多视角扫描 (5 个专家视角)
+    ↓
+Step 2: 矛盾地图 (冲突/共识/盲区)
+    ↓
+Step 2.5: 证据搜索 (WebSearch 验证/补充) ⚡
+    ↓
+Step 3: 综合研究简报 (整合所有发现)
+    ↓
+Step 4: 同行评审 (可靠性评估)
+```
+
+**使用方法**：
+1. 安装技能到 `~/.claude/skills/storm-deepresearch/`
+2. 输入话题，如："用 STORM 研究 AI 对教育的影响"
+3. 技能自动完成 5 步流程，输出完整研究简报
+
+**适用场景**：写文章前研究、商业决策、面试准备、投资分析、学习新技能、谈判准备、演示准备
+
+---
+
 ## 📂 目录结构
 
 ```
@@ -264,6 +309,13 @@ keye-open-skills/
 │   │   │   └── viral-narrative.md
 │   │   └── evals/
 │   │       └── evals.json
+│   ├── storm-deepresearch/       # STORM 多视角深度研究
+│   │   ├── SKILL.md
+│   │   ├── manifest.json
+│   │   ├── agents/
+│   │   │   └── interface.yaml
+│   │   └── references/
+│   │       └── storm-prompts.md
 │   ├── content-creation/        # 内容创作技能
 │   │   ├── article-generation.md
 │   │   ├── content-optimization.md
@@ -402,6 +454,12 @@ keye-open-skills/
 ---
 
 ## 🔄 更新日志
+
+### v1.2.0 (2026-06-18)
+- ✨ 新增 `storm-deepresearch` 技能 - 基于 Stanford STORM Method 的多视角深度研究框架
+- 🔬 5 步工作流：多视角扫描 → 矛盾地图 → 证据搜索 → 综合简报 → 同行评审
+- ⚡ 可选证据搜索步骤，用 WebSearch 验证最新数据
+- 📊 可靠性评分系统（1-10 分置信度打分）
 
 ### v1.1.0 (2026-06-04)
 - ✨ 新增 `keye-viral-dissect` 技能 - 爆款文章分析与写作技巧提取

@@ -1,0 +1,37 @@
+name: storm-deepresearch
+version: 1.1.0
+description: Stanford STORM 多视角深度研究框架，5 分钟完成博士级研究
+trigger: storm-deepresearch
+input:
+  - name: topic
+    type: string
+    required: true
+    description: 研究话题
+  - name: role
+    type: string
+    required: false
+    description: 用户角色（用于生成可落地洞察），如"产品经理"、"投资者"
+  - name: fast
+    type: boolean
+    required: false
+    description: 快速模式（跳过证据搜索步骤）
+output:
+  - name: research_briefing
+    type: markdown
+    description: 完整研究简报（含多视角扫描、矛盾地图、证据搜索、综合、同行评审）
+workflow:
+  - step: 1
+    name: Multi-Perspective Scan
+    description: 模拟 5 个专家视角研究话题
+  - step: 2
+    name: Contradiction Map
+    description: 找出视角间的冲突、共识和盲区
+  - step: 2.5
+    name: Evidence Search
+    description: 网络搜索验证争议点和补充最新数据（可选）
+  - step: 3
+    name: Synthesis
+    description: 整合成结构化研究简报
+  - step: 4
+    name: Peer Review
+    description: 自我批判，评估可靠性
