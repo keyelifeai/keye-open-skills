@@ -7,6 +7,11 @@ description: >
   proxy, route takeover, CLI proxy, or background traffic investigations, and
   when the user asks to 优化网络、排查网络不稳定、检查代理或 runs
   /keye-network-optimizer.
+license: MIT
+compatibility: Requires macOS and Python 3. Network inspection uses built-in macOS tools; any privileged or connection-changing action requires explicit user approval.
+metadata:
+  author: keyelifeai
+  version: "1.0.0"
 ---
 
 # Keye Network Optimizer

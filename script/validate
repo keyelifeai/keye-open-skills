@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+for skill_dir in skills/*; do
+  if [ -f "$skill_dir/SKILL.md" ]; then
+    skills-ref validate "$skill_dir"
+  fi
+done
+
+python3 scripts/validate_repository.py .
+python3 -m unittest discover -s tests -v
