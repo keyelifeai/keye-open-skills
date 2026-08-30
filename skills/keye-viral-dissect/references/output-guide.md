@@ -28,7 +28,7 @@ platform: [平台名称]
 
 默认路径由用户首次使用时配置，保存在 memory 中。建议路径：
 
-**本地默认**：`/Users/kevinzheng/Library/Mobile Documents/iCloud~md~obsidian/Documents/SyncVault/Business_ContentCreator/01-灵感与素材库/爆款分析`
+默认在对话中返回 Markdown。用户要求保存文件时，先确认目标目录和文件名；不得在 Skill 中写死个人目录。
 
 **开源用户**：需询问用户自定义路径
 
