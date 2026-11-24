@@ -11,6 +11,7 @@ from pathlib import Path
 
 
 EXPECTED_SKILLS = {
+    "keye-livestock-writer",
     "keye-network-optimizer",
     "keye-viral-dissect",
     "storm-deepresearch",

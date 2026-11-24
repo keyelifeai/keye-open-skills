@@ -1,14 +1,15 @@
 # keye-open-skills
 
-Brand 5.0 Lab by Keye 维护的 Agent Skills 公共源码仓库。当前公开 tree 只包含 3 个由 Keye 创建并维护的 Skill，不收录第三方 Skill 副本。
+Brand 5.0 Lab by Keye 维护的 Agent Skills 公共源码仓库。当前公开 tree 只包含 4 个由 Keye 创建并维护的 Skill，不收录第三方 Skill 副本。
 
 ## 当前 Skill
 
-| Skill | 版本 | 用途 | 主要要求 |
-| --- | --- | --- | --- |
-| `keye-network-optimizer` | `1.0.0` | 以可回滚方式诊断 macOS 网络、DNS、代理和 VPN/TUN 路径 | macOS、Python 3；系统变更前需用户批准 |
-| `keye-viral-dissect` | `2.1.0` | 拆解文章结构、论证方式与情绪设计 | 文本输入；URL 输入另需网络访问与 `web-access` Skill |
-| `storm-deepresearch` | `1.2.0` | 用多视角、矛盾图和证据复核组织研究简报 | 文本输入；证据搜索需要网络和搜索能力 |
+| Skill                                                           | 版本      | 用途                                   | 主要要求                                  |
+| ---                                                             | ---     | ---                                  | ---                                   |
+| [keye-livestock-writer](skills/keye-livestock-writer/README.md) | `1.0.0` | 任意畜牧企业的技术写作、证据景观与待审包                 | 品牌名称、主营产品；脚本需 Python 3.10+，研究按可用资料开展  |
+| `keye-network-optimizer`                                        | `1.0.0` | 以可回滚方式诊断 macOS 网络、DNS、代理和 VPN/TUN 路径 | macOS、Python 3；系统变更前需用户批准             |
+| `keye-viral-dissect`                                            | `2.1.0` | 拆解文章结构、论证方式与情绪设计                     | 文本输入；URL 输入另需网络访问与 `web-access` Skill |
+| `storm-deepresearch`                                            | `1.2.0` | 用多视角、矛盾图和证据复核组织研究简报                  | 文本输入；证据搜索需要网络和搜索能力                    |
 
 各 Skill 的版本独立维护。仓库 Release 只用于记录一次可复现的 Release Snapshot，不替代单个 Skill 版本。
 
@@ -25,6 +26,8 @@ npx skills add keyelifeai/keye-open-skills --skill storm-deepresearch
 ```
 
 根据来源生成，未安装验证。
+
+新增技能作者：科爷的数字生命 keyelifeai。
 
 ## 许可证与来源
 
@@ -45,7 +48,7 @@ npx skills add keyelifeai/keye-open-skills --skill storm-deepresearch
 ./script/validate
 ```
 
-验证只检查格式与静态内容，不执行 Skill、安装器、网络请求或客户端冒烟测试。
+验证检查格式、静态内容，并在临时目录运行畜牧写作脚本回归测试。不执行研究写作、安装器、网络请求或客户端冒烟测试。
 
 ## 贡献
 

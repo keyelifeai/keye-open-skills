@@ -1,0 +1,4 @@
+interface:
+  display_name: "科爷畜牧营养写作"
+  short_description: "生成决策型证据景观与可追溯的中文畜牧营养待审稿"
+  default_prompt: "使用 $keye-livestock-writer，先收集企业品牌名称和主营产品，再为畜牧技术主题创建中文待审写作包，从读者决策出发综合证据、冲突和目标市场适用边界，逐项登记来源并保留人工审核门。"
