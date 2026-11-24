@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "write-piglet-technical-article",
+      "prompt": "为断奶仔猪采食量写一篇面向饲料企业技术人员的中文文章，并建立证据台账。",
+      "expected_route": true
+    },
+    {
+      "id": "revise-layer-article",
+      "prompt": "把这篇蛋鸡微量元素文章改得更直白，保留研究边界并核对每项主张。",
+      "expected_route": true
+    },
+    {
+      "id": "audit-aquaculture-draft",
+      "prompt": "审计这篇小龙虾营养草稿，检查证据 ledger 和产品段是否可追溯。",
+      "expected_route": true
+    },
+    {
+      "id": "outline-sow-product-solution",
+      "prompt": "给母猪蹄部营养主题列一个产品承接型技术文章提纲。",
+      "expected_route": true
+    },
+    {
+      "id": "write-and-publish-boundary",
+      "prompt": "写一篇肉鸡营养文章并发布到公众号。",
+      "expected_route": true
+    },
+    {
+      "id": "draft-dairy-evidence-landscape",
+      "prompt": "起草一篇奶牛热应激营养干预的证据景观，比较研究共识、冲突和目标市场场景边界。",
+      "expected_route": true
+    },
+    {
+      "id": "veterinary-diagnosis",
+      "prompt": "诊断这头猪为什么发烧，并给出用药方案。",
+      "expected_route": false
+    },
+    {
+      "id": "veterinary-diagnosis-article",
+      "prompt": "写一篇猪发烧诊断与用药文章。",
+      "expected_route": false
+    },
+    {
+      "id": "feed-formula-calculation",
+      "prompt": "写一篇肉鸡饲料配方计算说明，并计算蛋白和能量水平。",
+      "expected_route": false
+    },
+    {
+      "id": "translation-only",
+      "prompt": "把这篇仔猪营养文章翻译成英文。",
+      "expected_route": false
+    },
+    {
+      "id": "publishing-only",
+      "prompt": "把现有的母猪营养文章发布到微信公众号。",
+      "expected_route": false
+    },
+    {
+      "id": "human-nutrition",
+      "prompt": "写一篇面向白领的人类膳食营养文章。",
+      "expected_route": false
+    },
+    {
+      "id": "general-feed-ad-copy",
+      "prompt": "写一篇猪饲料促销广告文案和宣传口号。",
+      "expected_route": false
+    },
+    {
+      "id": "cooking-recipe",
+      "prompt": "写一篇鸡汤食谱。",
+      "expected_route": false
+    },
+    {
+      "id": "equipment-company",
+      "prompt": "为家禽养殖设备企业起草一篇通风控制技术文章。",
+      "expected_route": true
+    },
+    {
+      "id": "sheep-breeding-service",
+      "prompt": "为绵羊育种服务企业写一篇技术文章。",
+      "expected_route": true
+    },
+    {
+      "id": "revise-goat-technical",
+      "prompt": "改写这篇山羊饲养技术文章。",
+      "expected_route": true
+    }
+  ]
+}

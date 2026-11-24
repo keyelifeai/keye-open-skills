@@ -1,0 +1,22 @@
+# Reader Decision Brief
+
+- 企业品牌：{{BRAND_NAME}}
+- 主营产品：{{MAIN_PRODUCTS}}
+- 目标市场：默认中国，按任务调整
+- 暂定标题：{{TITLE}}
+- 编辑模式：{{EDITORIAL_MODE}}
+- 物种：{{SPECIES}}
+- 阶段：{{LIFE_STAGE}}
+- Primary reader：{{AUDIENCE}}
+- Decision：TODO
+- Why now：TODO
+- What could change their view：TODO
+- Target-market relevance：TODO
+- Central thesis：TODO
+- Focused research question：TODO
+- 范围和明确排除项：TODO
+- 关键反证或替代解释：TODO
+- 产品连接状态：TODO，仅可为 none、company-perspective 或 product-connection
+- 产品专属来源，如适用：TODO
+- 语言：默认中文，用户明确要求时才使用其他语言
+- 必需人工审核：科学、法规、产品、品牌、发布
